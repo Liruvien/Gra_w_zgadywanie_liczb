@@ -22,13 +22,13 @@ def get_the_number():
 def guess_the_number():
     """Main function with game."""
     secret_number = random.randint(1, 100)
-    given_number = get_number()
+    given_number = get_the_number()
     while given_number != secret_number:
         if given_number < secret_number:
             print("Too small!")
         else:
             print("Too big!")
-        given_number = get_number()
+        given_number = get_the_number()
     print("You Win!")
 
 
